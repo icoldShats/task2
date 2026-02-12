@@ -16,7 +16,6 @@ public class HttpService {
         this.client = client;
     }
 
-    // Метод GET
     public String get(String url) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
